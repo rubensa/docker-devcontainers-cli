@@ -57,7 +57,7 @@ docker run --rm -it \
 Inside the container you should be able to build a devcontainer image which definition is under current directory's _.github_ folder (containing the _.devcontainer_ folder with the _devcontainer.json_ file) by running:
 
 ```bash
-devcontainer build --workspace-folder ${CONTAINER_WORKSPACE_FOLDER}/.github --image-name ghcr.io/nextail/${PWD##*/}-devcontainer --no-cache
+devcontainer build --workspace-folder ${CONTAINER_WORKSPACE_FOLDER}/.github --image-name ghcr.io/rubensa/${PWD##*/}-devcontainer --no-cache
 ```
 
 as `CONTAINER_WORKSPACE_FOLDER` env variable contains the path for the current host directory that is bind mounted inside the container.
