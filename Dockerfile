@@ -1,12 +1,12 @@
 FROM mcr.microsoft.com/devcontainers/base:bookworm
 
 # Specify devcontainer docker-outside-of-docker feature version
-ARG DOCKER_OUTSIDE_DOCKER_FEATURE_VERSION=1.5.0
-# For version 1.5.0 there is no GIT_TAG
+ARG DOCKER_OUTSIDE_DOCKER_FEATURE_VERSION=1.6.0
+# For version 1.6.0 there is no GIT_TAG
 # see: https://github.com/devcontainers/features/issues/1122
 # so we use the commit hash instead
 # ARG DOCKER_OUTSIDE_DOCKER_FEATURE_GIT_TAG=feature_docker-outside-of-docker_${DOCKER_OUTSIDE_DOCKER_FEATURE_VERSION}
-ARG DOCKER_OUTSIDE_DOCKER_FEATURE_GIT_TAG=f5787eed01022f177475a99084327e023a84ddaf
+ARG DOCKER_OUTSIDE_DOCKER_FEATURE_GIT_TAG=f02df17a38df650a130405bf06a35db49e8a9eff
 
 # Install using devcontainer docker-outside-of-docker feature install.sh script
 ADD --chmod=700 https://raw.githubusercontent.com/devcontainers/features/${DOCKER_OUTSIDE_DOCKER_FEATURE_GIT_TAG}/src/docker-outside-of-docker/install.sh /tmp/install.sh

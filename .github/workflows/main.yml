@@ -18,6 +18,4 @@ jobs:
       DOCKER_REPOSITORY_NAME: rubensa
       DOCKER_IMAGE_NAME: devcontainers-cli
       DOCKER_IMAGE_TAG: latest
-      # see: https://github.com/devcontainers/features/pull/833#issuecomment-2346085769
-      DOCKER_IMAGE_PLATFORMS: linux/amd64
     secrets: inherit
